@@ -1,6 +1,6 @@
 #### altschool frontend engineering class 2022, second assignment
 
-#### overview: implementing:
+#### overview/ implementing:
 
 - Nested routes
 - React-router-dom
