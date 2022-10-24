@@ -1,10 +1,13 @@
 import './App.scss';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header"> App Component </header>
-    </div>
+    <ErrorBoundary>
+      <div className="App">
+        <header className="App-header"> App Component </header>
+      </div>
+    </ErrorBoundary>
   );
 }
 
