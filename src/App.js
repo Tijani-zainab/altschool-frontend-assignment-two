@@ -1,12 +1,11 @@
 import './App.scss';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import Landing from './Pages/Landing/Landing';
 
 const App = () => {
   return (
     <ErrorBoundary>
-      <div className="App">
-        <header className="App-header"> App Component </header>
-      </div>
+      <Landing />
     </ErrorBoundary>
   );
 }
