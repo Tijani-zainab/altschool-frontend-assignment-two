@@ -1,8 +1,10 @@
 import './Landing.scss';
+import { Layout } from '../../Components';
 
 const Landing = () => {
     return (
         <div className='landing-page'>
+            <Layout />
             <h1>Landing Page</h1>
         </div>
     );
