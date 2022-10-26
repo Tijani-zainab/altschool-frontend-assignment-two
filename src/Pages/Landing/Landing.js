@@ -1,10 +1,10 @@
 import './Landing.scss';
-import { Layout } from '../../Components';
+import { GlobalNav } from '../../Components';
 
 const Landing = () => {
     return (
         <div className='landing-page'>
-            <Layout />
+            <GlobalNav />
             <h1>Landing Page</h1>
         </div>
     );

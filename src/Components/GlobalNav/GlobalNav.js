@@ -1,12 +1,12 @@
-import './Layout.scss';
-import { NavLink } from 'react-router-dom';
+import './GlobalNav.scss';
+import { HashLink } from 'react-router-hash-link';
 
 const Layout = ({ children }) => {
 
-    let navLinks = [
-        { to: '/', label: 'Home' }, 
-        { to: '/about', label: 'About' },
-        { to: '/contact', label: 'Contact' }
+    let hashLinks = [
+        { to: '/#home', label: 'Home' }, 
+        { to: '/#about', label: 'About' },
+        { to: '/#contact', label: 'Contact' }
     ];
 
     return (
@@ -18,9 +18,9 @@ const Layout = ({ children }) => {
 
             <nav className='nav'>
                 <ul className='nav-links'>
-                    {navLinks.map((link, index) => (
+                    {hashLinks.map((link, index) => (
                         <li key={index} className='nav-link'>
-                            <NavLink exact to={link.to} activeClassName='active'>{link.label}</NavLink>
+                            <HashLink exact to={link.to} activeClassName='active' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>{link.label}</HashLink>
                         </li>
                     ))}
                 </ul>
