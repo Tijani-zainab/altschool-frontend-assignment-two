@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
                 <ul className='nav-links'>
                     {hashLinks.map((link, index) => (
                         <li key={index} className='nav-link'>
-                            <HashLink exact to={link.to} activeClassName='active' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>{link.label}</HashLink>
+                            <HashLink className='hashlink-link' to={link.to} activeClassName='active' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>{link.label}</HashLink>
                         </li>
                     ))}
                 </ul>

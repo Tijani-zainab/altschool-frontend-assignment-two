@@ -8,7 +8,7 @@ const About = () => {
             
             <ul className='about-links'>
                 <li className='about-link'>
-                    <Link to='secret'>Secret</Link>
+                    <Link className='Link' to='secret'>Secret page</Link>
                 </li>
             </ul>
             <Outlet />
