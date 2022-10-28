@@ -8,7 +8,7 @@ const Routing = () => {
             <Route path="/about" element={<About />}>
                 <Route path=":secretId" element={<SecretAbout />} />
             </Route>
-            <Route path="*" element={<NotFound />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
     );
 };
