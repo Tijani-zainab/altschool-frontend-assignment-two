@@ -73,7 +73,8 @@
     border: 1px solid #dddddd;
     border-radius: 7px;
     font-size: 1rem;
-    padding: 12%;
+    padding: 11%;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
@@ -84,8 +85,6 @@
     }
     .hero__title {
         font-size: 2rem;
-        line-height: 1.2;
-        letter-spacing: 3px;
     }
     .shadow__box {
         margin: 40px 0;

@@ -11,7 +11,9 @@ const Hero = () => {
             <section className='shadow__box'>
                 <p className='hero__description'>This is a simple page with a few pages and a few components.</p>
             </section>
+            
         </div>
+        
     );
 }
 
