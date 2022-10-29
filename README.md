@@ -22,8 +22,7 @@
 - Submit a pull request to this repo
 
 
-
-
+[view project](https://altschool-assignment-two.netlify.app/)
 
 
 
