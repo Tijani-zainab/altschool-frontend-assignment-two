@@ -24,5 +24,3 @@
 
 [view project](https://altschool-assignment-two.netlify.app/)
 
-
-

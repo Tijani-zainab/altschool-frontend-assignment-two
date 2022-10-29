@@ -26,10 +26,22 @@
     color: #fff;
 }
 
+.hamburger {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
 
-    // .nav-links {
-    //     display: none;
-    // }
+    .header h1 {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

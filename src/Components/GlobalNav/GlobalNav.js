@@ -1,12 +1,17 @@
 import './GlobalNav.scss';
 import { HashLink } from 'react-router-hash-link';
+import { Twirl as Hamburger } from 'hamburger-react';
+import { useState } from 'react';
 
 const Layout = ({ children }) => {
+
+    const [isOpen, setOpen] = useState(false);
 
     let hashLinks = [
         { to: '/#home', label: 'Home' }, 
         { to: '/#about', label: 'About' },
-        { to: '/#contact', label: 'Contact' }
+        { to: '/#contact', label: 'Contact' },
+        { to: '/#users', label: 'Users' }
     ];
 
     return (
@@ -25,6 +30,10 @@ const Layout = ({ children }) => {
                     ))}
                 </ul>
             </nav>
+
+            <div className='hamburger'>           
+                <Hamburger size={20} toggled={isOpen} toggle={setOpen} />
+            </div>
             {children}
         </div>
     );
