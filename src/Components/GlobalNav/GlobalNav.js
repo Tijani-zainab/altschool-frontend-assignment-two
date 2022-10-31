@@ -14,10 +14,10 @@ const Layout = ({ children }) => {
         { to: '/#users', label: 'Users' }
     ];
 
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 
->>>>>>> 3506cc99e32bf1b2eb0abfab1ff213755ff584ee
+// >>>>>>> 3506cc99e32bf1b2eb0abfab1ff213755ff584ee
     return (
         <div className='layout'>
 
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
                 <ul className='nav-links'>
                     {hashLinks.map((link, index) => (
                         <li key={index} className='nav-link'>
-                            <HashLink className='hashlink-link' to={link.to} activeClassName='active' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>{link.label}</HashLink>
+                            <HashLink className='hashlink-link' to={link.to} scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>{link.label}</HashLink>
                         </li>
                     ))}
                 </ul>
