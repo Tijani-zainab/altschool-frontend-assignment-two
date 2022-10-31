@@ -1,0 +1,61 @@
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 2% 6%;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.hashlink-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+    .hamburger__line {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+    }
+
+}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7c9257d8e1bbbcf8fd4e51b3415b8f09f63fd74d
