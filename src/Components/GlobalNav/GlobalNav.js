@@ -14,13 +14,10 @@ const Layout = ({ children }) => {
         { to: '/#users', label: 'Users' }
     ];
 
-<<<<<<< HEAD
-=======
 // <<<<<<< HEAD
 // =======
 
 // >>>>>>> 3506cc99e32bf1b2eb0abfab1ff213755ff584ee
->>>>>>> 7c9257d8e1bbbcf8fd4e51b3415b8f09f63fd74d
     return (
         <div className='layout'>
 
@@ -46,14 +43,4 @@ const Layout = ({ children }) => {
     );
 }
 
-<<<<<<< HEAD
 export default Layout;
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 7c9257d8e1bbbcf8fd4e51b3415b8f09f63fd74d
-=======
-export default Layout;
->>>>>>> 7c9257d8e1bbbcf8fd4e51b3415b8f09f63fd74d
