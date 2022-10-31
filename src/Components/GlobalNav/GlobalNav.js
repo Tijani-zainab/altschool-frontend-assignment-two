@@ -14,6 +14,10 @@ const Layout = ({ children }) => {
         { to: '/#users', label: 'Users' }
     ];
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3506cc99e32bf1b2eb0abfab1ff213755ff584ee
     return (
         <div className='layout'>
 
