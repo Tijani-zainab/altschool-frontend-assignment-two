@@ -4,7 +4,7 @@ import AboutArrowCard from '../../assets/images/about-arrow-card.jpg';
 
 const About = () => {
     return (
-        <div className='about-page'>
+        <div className='about-page' id='about'>
 
             <div className='about-section'>
                 <section className='about-contact__card'>

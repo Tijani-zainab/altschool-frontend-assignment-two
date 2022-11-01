@@ -1,8 +1,9 @@
 import './Contact.scss';
+import { HashLink } from 'react-router-hash-link';
 
 const Contact = () => {
     return (
-        <div className='contact-page'>
+        <div className='contact-page' id='contact'>
             <div className='contact-box'>
                 <h3>Contact</h3>
                 <p> Get our information and reach out to us here, with our line !</p>
@@ -15,6 +16,8 @@ const Contact = () => {
                 </section>
                 
             </div>
+
+            <HashLink className='hashlink-link contact-link' to='/#home' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>Back to Top</HashLink>
 
         </div>
     );
