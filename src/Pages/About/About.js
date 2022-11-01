@@ -1,10 +1,23 @@
+// import { lazy } from 'react';
 import './About.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Outlet } from 'react-router-dom';
 import AboutArrowCard from '../../assets/images/about-arrow-card.jpg';
+import { SecretAbout } from '../../Pages';
+// let SecretAbout = lazy(() => import('./SecretAbout'));
 
 
-const About = () => {
+const About = ({isSecret}) => {  
+    
+    if (isSecret) {
+        return (
+            <div className='about' id='about'>
+                { SecretAbout }
+            </div>
+        );
+    }
+    
+
     return (
         <div className='about-page' id='about'>
 
@@ -16,13 +29,17 @@ const About = () => {
 
                 <section className='about-contact__desc'>
                     <p>This is a simple page with a few pages and a few components.</p>
-                    <HashLink className='hashlink-link secret-link' smooth to="secret-about/#secret" scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}> Secret page </HashLink>
+                    <HashLink className='secret-link' smooth to="#secret" scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}> Secret page </HashLink>
                 </section>
+                
+
+                <SecretAbout isSecret />
             </div>
             
             <Outlet />
         </div>
     );
+    
 }
 
 export default About;
