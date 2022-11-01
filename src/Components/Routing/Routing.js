@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { NotFound, Landing, Contact, Users, About, SecretAbout } from "../../Pages";
+import { Contact, Users, About, SecretAbout } from "../../Pages";
 import { Routes, Route } from "react-router-dom";
 
 

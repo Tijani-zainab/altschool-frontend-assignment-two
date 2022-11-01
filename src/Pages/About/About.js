@@ -1,6 +1,8 @@
 import './About.scss';
-import { Outlet, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { Outlet } from 'react-router-dom';
 import AboutArrowCard from '../../assets/images/about-arrow-card.jpg';
+
 
 const About = () => {
     return (
@@ -14,7 +16,7 @@ const About = () => {
 
                 <section className='about-contact__desc'>
                     <p>This is a simple page with a few pages and a few components.</p>
-                    <button className='secret-link'><Link className='Link' to='secret'>Secret page</Link></button>
+                    <HashLink className='hashlink-link secret-link' smooth to="secret-about/#secret" scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}> Secret page </HashLink>
                 </section>
             </div>
             
