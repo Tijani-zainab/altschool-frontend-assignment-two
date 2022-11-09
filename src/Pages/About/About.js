@@ -7,16 +7,7 @@ import { SecretAbout } from '../../Pages';
 // let SecretAbout = lazy(() => import('./SecretAbout'));
 
 
-const About = ({isSecret}) => {  
-    
-    // if (isSecret) {
-    //     return (
-    //         <div className='about' id='about'>
-    //             { SecretAbout }
-    //         </div>
-    //     );
-    // }
-    
+const About = () => {  
 
     return (
         <div className='about-page' id='about'>
