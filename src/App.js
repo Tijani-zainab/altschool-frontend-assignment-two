@@ -1,6 +1,6 @@
 import './App.scss';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
-import { About, Contact, Landing } from './Pages';
+import { About, Contact, Landing, Users } from './Pages';
 import { Footer, Routing } from './Components';
 
 const App = () => {
@@ -10,6 +10,7 @@ const App = () => {
       <Landing />
       <About />
       <Contact />
+      <Users />
       <Footer />
       <Routing />
     </ErrorBoundary>
