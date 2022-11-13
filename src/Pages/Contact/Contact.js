@@ -17,7 +17,7 @@ const Contact = () => {
                 
             </div>
 
-            <HashLink className='hashlink-link contact-link' to='/#home' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>Back to Top</HashLink>
+            <HashLink className='hashlink-link back-to-top' to='/#home' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>Back to Top</HashLink>
 
         </div>
     );
